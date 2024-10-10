@@ -1,0 +1,308 @@
+/* Fix white space issue in the header (dash-top) */
+.dash-top {
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* Ensures space between elements */
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #2B4C5D; /* Applied background color */
+  height: 80px; /* Keep the height consistent */
+  z-index: 2;
+  position: relative; /* Needed for z-index to work */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+/* Force the new background and button colors */
+.dash-top {
+  background-color: #2B4C5D !important;
+}
+
+.start-button {
+  background-color: #ffffff !important; /* Force the new button color */
+}
+
+.btn {
+  background-color: #58849a !important; /* Force the new button color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #1E3A46; /* Hover effect for login button */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Logo and brand name container */
+.logo-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background-color: transparent; /* Ensure no background on the container */
+}
+
+/* Logo image */
+.logo {
+  height: 90px;
+  background-color: transparent; /* Ensure logo image has no background */
+}
+
+/* Brand name */
+.brand-name {
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-left: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Main section background with cover image */
+.dash-main {
+  text-align: center;
+  height: 100vh;
+  background-image: url('C:/Users/aryan/Desktop/Hackathon/WaterBody/Frontend/src/assets/images/coverimage.jpg'); /* Update with the correct path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 0 20px; /* Ensure some padding inside the main container */
+}
+
+/* Overlay to darken the background for better text contrast */
+.dash-main::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #000000;
+  opacity: 0.4; /* Dark overlay */
+  z-index: 0;
+}
+
+/* Centered content */
+.content {
+  color: white;
+  z-index: 1;
+  text-align: center;
+  margin-top: -50px; /* Adjust the top margin to bring the content into focus */
+}
+
+/* Tagline styling */
+.tagline {
+  font-size: 3em;
+  margin: 0;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+/* Below tagline text styling */
+.belowtagline {
+  font-size: 1.5em;
+  margin: 20px 0; /* Increased margin between tagline and contact info */
+  color: #fffdfd;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/* Contact Information */
+/* Contact Information */
+.contact-info {
+  margin-top: 40px;
+  text-align: center;
+  position: absolute; /* Use absolute positioning */
+  bottom: 20px; /* Place it at the bottom of the page */
+  left: 50%;
+  transform: translateX(-50%); /* Center it horizontally */
+  width: 100%; /* Ensure full width for the contact info */
+}
+
+.contact-info h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px; /* Reduced margin to bring it closer to the contact items */
+  color: #ffffff; /* Change to white */
+  font-family: 'Arial', sans-serif; /* Changed font family */
+}
+
+.contact-details {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  color: #ffffff; /* Change to white */
+  font-family: 'Arial', sans-serif; /* Changed font family */
+}
+
+.contact-icon {
+  font-size: 24px;
+  color: #ffffff; /* Keep the color for icons */
+}
+
+/* Footer or additional section styling, if needed */
+.footer {
+  background-color: #2B4C5D;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9em;
+  position: relative; /* Ensure it sits above the contact info */
+}
+/* Dropdown button styling */
+/* Dropdown button styling */
+.dropdown {
+  position: relative; /* Needed for absolute positioning of dropdown content */
+}
+
+/* Dropdown button style */
+.dropdown-btn {
+  background: none;
+  border: none;
+  color: white; /* White text for the button */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  cursor: pointer;
+  margin-right: 20px; /* Add margin to separate from login button */
+  display: flex;
+  align-items: center;
+}
+
+/* Arrow styling */
+.arrow {
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+}
+
+.arrow.open {
+  transform: rotate(180deg); /* Rotate arrow when dropdown is open */
+}
+
+/* Dropdown content styling */
+.dropdown-content {
+  position: absolute;
+  top: 100%; /* Position below the button */
+  left: 0;
+  background-color: #2B4C5D; /* Match the header color */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  color: white; /* White text color */
+  z-index: 1; /* Ensure dropdown appears above other content */
+  border-radius: 4px; /* Optional: rounded corners */
+  padding: 10px; /* Padding around the dropdown items */
+}
+
+.dropdown-content p {
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.dropdown-content p:hover {
+  text-decoration: underline; /* Underline on hover for dropdown items */
+}
+/* Fix white space issue in the header (dash-top) */
+.dash-top {
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* Ensures space between elements */
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #2B4C5D; /* Applied background color */
+  height: 80px; /* Keep the height consistent */
+  z-index: 2;
+  position: relative; /* Needed for z-index to work */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+/* Container for logo and right navigation */
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+/* Dropdown button styling */
+.dropdown {
+  position: relative; /* Needed for absolute positioning of dropdown content */
+}
+
+/* Dropdown button style */
+.dropdown-btn {
+  background: none;
+  border: none;
+  color: white; /* White text for the button */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  cursor: pointer;
+  margin-right: 20px; /* Add margin to separate from login button */
+  display: flex;
+  align-items: center;
+}
+
+/* Arrow styling */
+.arrow {
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+}
+
+.arrow.open {
+  transform: rotate(180deg); /* Rotate arrow when dropdown is open */
+}
+
+/* Dropdown content styling */
+.dropdown-content {
+  position: absolute;
+  top: 100%; /* Position below the button */
+  left: 0;
+  background-color: #2B4C5D; /* Match the header color */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  color: white; /* White text color */
+  z-index: 1; /* Ensure dropdown appears above other content */
+  border-radius: 4px; /* Optional: rounded corners */
+  padding: 10px; /* Padding around the dropdown items */
+}
+
+.dropdown-content p {
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.dropdown-content p:hover {
+  text-decoration: underline; /* Underline on hover for dropdown items */
+}
+
+/* Button styling for login */
+.btn {
+  background-color: #2B4C5D;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #1E3A46; /* Hover effect */
+  transform: translateY(-2px); /* Slight lift effect */
+}

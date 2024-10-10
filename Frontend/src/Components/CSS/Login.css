@@ -1,0 +1,140 @@
+/* Container for the login page with a two-column layout */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+    background-color: #5c96b3a3; /* Light green background for contrast */
+  }
+  
+  /* Create a section for the text on the left and form on the right */
+  .login-content {
+    display: flex;
+    width: 80%; /* Adjust width as needed */
+    max-width: 1200px; /* Set max width for large screens */
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px; /* Gap between text and form */
+  }
+  
+  /* Style the left side text */
+  .left-text {
+    flex: 1; /* Takes up available space */
+    color: white; /* Default text color is white */
+    font-size: 2.5em; /* Adjust font size */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-align: left; /* Align text to the left */
+    line-height: 1.4; /* Increase line spacing */
+  }
+  
+  /* Style specific words */
+  .left-text .highlight-blue {
+    color: #2b5171; /* Dark blue color for "your life" */
+  }
+  
+  /* Form container styles */
+  .form-container {
+    flex: 1; /* Takes up available space */
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    width: 100%;
+    max-width: 570px; /* Limit max width */
+  }
+  
+  /* Adjust the padding to ensure space for the header */
+  .login-section {
+    padding-top: 80px; /* Space for the fixed header */
+  }
+  
+  /* Other styles remain the same */
+  
+
+/* Dash top styles */
+.dash-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Use full width of the viewport */
+    padding: 15px 20px;
+    background-color: #2B4C5DCC; /* Muted beige tone */
+    position: fixed; /* Fix the header to the top */
+    top: 0; /* Align to the top */
+    z-index: 1000; /* Ensure it stays on top */
+}
+
+/* Add padding to the login section to accommodate the fixed header */
+.login-section {
+    padding-top: 80px; /* Give space for the fixed header */
+}
+
+
+/* Logo styles */
+.logo {
+    height: 70px; /* Adjust logo height */
+    cursor: pointer;
+}
+
+/* Form container */
+.form-container {
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    width: 100%;
+    max-width: 570px; /* Limit max width */
+}
+
+/* Welcome title styles */
+.welcome-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2b5171; 
+    margin-bottom: 20px; /* Increased margin for spacing */
+}
+
+/* Input group styles */
+.input-group {
+    margin-bottom: 15px; /* Space between inputs */
+}
+
+/* Input field styles */
+.form-inp {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #396e85; /* Dark green border */
+    border-radius: 100px; /* Rounded corners for inputs */
+    transition: border 0.3s; /* Smooth transition */
+}
+
+/* Input focus styles */
+.form-inp:focus {
+    outline: none;
+    background-color: #c4f0e6; /* Light green background on focus */
+    border: 1px solid #2c707b; /* Dark green border on focus */
+}
+
+/* Button styles */
+.btn {
+  background-color: #E0D2B7; /* Muted beige tone */
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px; /* Rounded button corners */
+    cursor: pointer;
+    font-size: 16px; /* Font size for buttons */
+    transition: background 0.3s; /* Smooth hover effect */
+}
+
+.btn:hover {
+  background-color: #E0D2B7; /* Muted beige tone */
+}
+
+/* Register text styles */
+.register-text {
+    margin-top: 15px; /* Space above text */
+    text-align: center;
+    color: #2b5171; /* Medium green for contrast */
+}
